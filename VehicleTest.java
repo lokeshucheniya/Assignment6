@@ -1,12 +1,10 @@
 import java.util.*;
 public class VehicleTest 
 {
-
 	public static void main(String args[])
-	{
-		
+	{	
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter the number of vehicles");
+		System.out.println("Enter the number of vehicles");			//etting no of Vehicle
 		
 		int numberOfVehicle=scanner.nextInt();
 		Vehicle vehicle[]= new Vehicle[numberOfVehicle];
@@ -30,6 +28,7 @@ public class VehicleTest
 				vehicle[i].changeSpeed(scanner.nextInt());
 			}
 			
+			//For turning 
 			System.out.println("Do you want to turn? Yes/No");
 			String answerTurn=scanner.next();
 			if(answerTurn.equals("Yes")) 
