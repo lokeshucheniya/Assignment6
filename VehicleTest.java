@@ -4,7 +4,7 @@ public class VehicleTest
 	public static void main(String args[])
 	{	
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Enter the number of vehicles");			//etting no of Vehicle
+		System.out.println("Enter the number of vehicles");			//Getting no of Vehicle
 		
 		int numberOfVehicle=scanner.nextInt();
 		Vehicle vehicle[]= new Vehicle[numberOfVehicle];
@@ -43,7 +43,7 @@ public class VehicleTest
 				{
 				System.out.println("Turn by certain degrees? Yes/No");
 				String turn=scanner.next();
-				if(turn.equals("Yes")) 
+				if(turn.equals("Yes")) 					//If answer is yes then take turn by given value
 				{
 					System.out.println("By what value you want to change? Enter positive value to turn left,negative to turn right");
 					int change=scanner.nextInt();
