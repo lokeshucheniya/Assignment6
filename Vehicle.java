@@ -8,12 +8,14 @@ public class Vehicle {
 	protected static final int TURN_LEFT=1;
 	protected static final int TURN_RIGHT=0;
 	
+	//Empty Constructor
 	public Vehicle()
 	{
 		vehicleIdNo=identificationNumber+1;
 		identificationNumber+=1;
 	}
 	
+	//Parameterised Constructor
 	public Vehicle(String name)
 	{
 		vehicleIdNo=identificationNumber+1;
@@ -21,6 +23,7 @@ public class Vehicle {
 		this.ownerName=name;	
 	}
 	
+	//Getters and Setters
 	public static int getIdentificationNumber() {
 		return identificationNumber;
 	}
@@ -56,12 +59,14 @@ public class Vehicle {
 		this.ownerName = ownerName;
 	}
 	
+	//Method for turning left right
 	public int turnLeftRight(int turn)
 	{
 		this.degree=(turn==1)?((this.degree+90))%360:((this.degree-90)%360);
 		return degree;
 	}
 	
+	//Method for changing Direction
 	public int changeDirection(int change)
 	{
 		if(change>=0)
