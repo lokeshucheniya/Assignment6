@@ -2,7 +2,8 @@ public class Triangle {
 	private double side1;
 	private double side2;
 	private double side3;
-
+	
+	//Generating Getters and Setters
 	public double getSide1() {
 		return side1;
 	}
@@ -26,7 +27,8 @@ public class Triangle {
 	public void setSide3(double side3) {
 		this.side3 = side3;
 	}
-
+	
+	//Method for checking type of Triangle
 	public int[] checkType(Triangle triangle[]) {
 		int type[], i;
 		type = new int[triangle.length];
